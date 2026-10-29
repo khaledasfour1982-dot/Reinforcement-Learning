@@ -1,0 +1,12 @@
+environment: "MountainCarContinuous-v0"
+algorithm: "SAC"
+total_timesteps: 200000
+n_trials: 3
+checkpoint_freq: 10000
+
+# hyperparameter to tune
+hyperparam_name: learning_rate
+hyperparam_values: [0.0001, 0.0003, 0.001]
+
+log_dir: logs/extension
+seed: 42
